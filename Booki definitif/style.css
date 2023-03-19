@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* <==================== HEADER ON ====================< */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo a img {
+    width: 61px;
+    margin: 50px;
+}
+
+header .headNav ul {
+    display: flex;
+    list-style: none;
+}
+
+header .headNav ul li a {
+    display: block;
+    padding: 48px 50px 20px 50px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    border-top: solid 2px #ffffff;
+}
+
+header .headNav ul li a:hover {
+    transition: border 1.3s, color 0.5s;
+    border-top: solid 2px #0065FC;
+    color: #0065FC;
+}
+
+
+/* >==================== HEADER OFF ====================> */
+
+
+/* <==================== MAIN ON ====================< */
+main {
+    margin: 0 40px 50px;
+}
+
+
+/* ====== SearchZone ====== */
+#SearchZone h1 {
+    font-size: 22px;
+    margin: 0 0 7px 0;
+}
+
+#SearchZone p {
+    font-size: 16px;
+}
+
+
+/* ----Localisation---- */
+#SearchZone form {
+    margin: 30px 0;
+    display: flex;
+}
+
+#SearchZone form label {
+    background: #F2F2F2;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+}
+
+#SearchZone form button,
+#SearchZone form input {
+    margin: 0;
+    padding: 10px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+}
+
+#SearchZone form #localisation {
+    border: solid 1px #F2F2F2;
+    width: 210px;
+}
+
+#SearchZone form #localisation::placeholder {
+    color: #000000;
+}
+
+#SearchZone form .submit {
+    background: #0065FC;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+#SearchZone form .submit i {
+    display: none;
+    color: #ffffff;
+}
+
+
+/* ----Filtres---- */
+#SearchZone nav {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 30px 0 40px 0;
+}
+
+#SearchZone nav p {
+    font-size: 18px;
+}
+
+#SearchZone nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 0 15px;
+}
+
+#SearchZone nav ul li {
+    margin: 10px 15px;
+}
+
+#SearchZone nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+    font-size: 17px;
+    border: solid 2px #D9D9D9;
+    border-radius: 25px;
+    padding: 0.7rem 1.3rem;
+}
+
+#SearchZone nav ul li a:hover {
+    transition: 0.4s all;
+    background: #DEEBFF;
+}
+
+#SearchZone nav ul li a i {
+    margin: 0 7px 0 0;
+    color: #0065FC;
+}
+
+#SearchZone nav+p {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#SearchZone p span {
+    margin: 0 8px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#SearchZone p span i {
+    color: #0065FC;
+    padding: 5px 10px;
+    border: #D9D9D9 solid 1px;
+    border-radius: 24px;
+}
+
+
+/* ====== HousingZone ====== */
+#HousingZone {
+    display: flex;
+    margin: 50px 0 0 0;
+    justify-content: space-between;
+}
+
+
+/* ---Housing--- */
+#HousingZone .housing {
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+    width: 63%;
+    height: 656px;
+    display: flex;
+    flex-direction: column;
+}
+
+#HousingZone .housing h2 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+#HousingZone .housing .cardsZone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#HousingZone .housing .cardsZone article {
+    margin: 1rem 0;
+    padding: 5px;
+    width: 31%;
+    border-radius: 20px;
+    box-shadow: #8f87876b 0 0 15px;
+    background: white;
+    transition: 0.3s;
+}
+
+#HousingZone .housing .cardsZone article:hover {
+    transform: scale(1.015);
+    transition: 0.3s;
+}
+
+#HousingZone .housing .cardsZone article .housingCards {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: #000000;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .look img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .description h3 {
+    font-size: 16px;
+    margin: 5px;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .description .housingPrice {
+    font-size: 14px;
+    margin: 0 5px 5px 5px;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating {
+    margin: 5px;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating i {
+    color: #0065FC;
+    transition: 1s all;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating i:hover~i {
+    color: #0065fc54;
+    transition: 0.2s all;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating i:hover~.grey {
+    color: #F2F2F2;
+    transition: 0.2s all;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating .grey {
+    color: #F2F2F2;
+    transition: 0.3s all;
+}
+
+#HousingZone .housing .cardsZone article .housingCards .description .housingRating .grey:hover {
+    color: #0065FC;
+    transition: 0.2s all;
+}
+
+#HousingZone .housing> :last-child {
+    text-decoration: none;
+    font-weight: bold;
+    align-items: flex-end;
+    color: #000000;
+    margin-top: auto;
+    width: 105px;
+    padding: 5px;
+}
+
+
+/* ---Popular--- */
+#HousingZone .popular {
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+#HousingZone .popular h2 {
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+}
+
+#HousingZone .popular h2 i {
+    color: #0065FC;
+}
+
+#HousingZone .popular .cardsZone {
+    display: flex;
+    flex-direction: column;
+}
+
+#HousingZone .popular .cardsZone article {
+    background: white;
+    margin: 1rem 0;
+    padding: 5px;
+    height: 144px;
+    width: 100%;
+    box-shadow: #8f87876b 0 0 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#HousingZone .popular .cardsZone article:hover {
+    transform: scale(1.015);
+    transition: 0.3s;
+}
+
+#HousingZone .popular .cardsZone article .popularCards {
+    display: flex;
+    text-decoration: none;
+    border-radius: 20px;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .look {
+    width: 40%;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .look img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description h3 {
+    font-size: 16px;
+    margin: 5px;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description p {
+    font-size: 14px;
+    margin: 0 5px 5px 5px;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating {
+    margin: 5px;
+    display: flex;
+    padding: 5px 0;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating i {
+    color: #0065FC;
+    transition: 1s all;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating i:hover~i {
+    color: #0065fc54;
+    transition: 0.2s all;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating i:hover~.grey {
+    color: #F2F2F2;
+    transition: 0.2s all;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating .grey {
+    color: #F2F2F2;
+}
+
+#HousingZone .popular .cardsZone article .popularCards .description .housingRating .grey:hover {
+    color: #0065FC;
+    transition: 0.2s all;
+}
+
+
+/* ====== ActivityZone ====== */
+#ActivityZone h2 {
+    margin: 0 0 30px 0;
+    padding-top: 50px;
+    font-size: 22px;
+}
+
+#ActivityZone .activity {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#ActivityZone .activity article {
+    width: 22.5%;
+    height: 445px;
+    border-radius: 20px;
+    box-shadow: #8f87876b 0 0 15px;
+    transition: 0.3s;
+}
+
+#ActivityZone .activity article:hover {
+    transform: scale(1.015);
+    transition: 0.3s;
+}
+
+#ActivityZone .activity article .activityCards {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+#ActivityZone .activity article .activityCards .look {
+    height: 389px;
+    width: 100%;
+}
+
+#ActivityZone .activity article .activityCards .look img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#ActivityZone .activity article .activityCards .description {
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+#ActivityZone .activity article .activityCards .description h3 {
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+
+/* >==================== MAIN OFF ====================> */
+
+
+/* <==================== FOOTER ON ====================< */
+footer {
+    background: #F2F2F2;
+    margin: 50px 40px 0;
+}
+
+footer .footNav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    width: 100%;
+}
+
+footer .footNav div {
+    width: 33%;
+}
+
+footer .footNav div p {
+    font-weight: bold;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+footer .footNav ul {
+    list-style: none;
+}
+
+footer .footNav ul li a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    font-size: 16px;
+}
+
+footer .footNav ul li a:hover {
+    color: #5e5e5e;
+}
+
+
+/* >==================== FOOTER OF ====================> */
+
+
+/* <==================== RESPONSIVE ON ====================< */
+@media screen and (max-width: 991px) {
+
+    #SearchZone nav{
+        align-items: baseline;
+    }
+
+  
+    #HousingZone {
+        flex-direction: column;
+    }
+
+    #HousingZone .housing {
+        width: 100%;
+    }
+
+    #HousingZone .popular {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    #HousingZone .popular .cardsZone {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #HousingZone .popular .cardsZone article {
+        width: 31%;
+        height: auto;
+    }
+
+    #ActivityZone .activity article {
+        height: 267px;
+    }
+
+    #ActivityZone .activity article .activityCards .look {
+        height: 211px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo a img {
+        margin: 25px 0 20px;
+    }
+
+    header .headNav {
+        width: 100%;
+    }
+
+    header .headNav ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    header .headNav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    header .headNav ul li a {
+        border-top: none;
+        border-bottom: solid 2px #F2F2F2;
+        padding: 25px;
+    }
+
+    header .headNav ul li a:hover {
+        border-top: none;
+        border-bottom: solid 2px #0065FC;
+    }
+
+    main {
+        margin: 0;
+    }
+
+
+    /*=====================
+    =====================*/
+    #SearchZone {
+        margin: 30px 2.5vh;
+    }
+
+    #SearchZone p {
+        margin: 10px 0 0;
+    }
+
+    #SearchZone form label,
+    .submit {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #SearchZone form #localisation {
+        width: 100%;
+    }
+
+    #SearchZone form .submit i {
+        display: block;
+        color: #ffffff;
+    }
+
+    #SearchZone form .submit span {
+        display: none;
+    }
+
+    #SearchZone nav {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 30px;
+    }
+
+    #SearchZone nav ul {
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    #SearchZone nav ul li {
+        width: 47.5%;
+        margin: 9px 0;
+    }
+
+    #SearchZone nav ul li a {
+        font-size: 12px;
+        padding: 1rem 0;
+        justify-content: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #SearchZone nav ul li a i {
+        font-size: 20px;
+        margin-left: 3px;
+    }
+
+    #SearchZone nav+p {
+        align-items: baseline;
+    }
+
+    #SearchZone nav+p span i {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+
+    #HousingZone {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    #HousingZone .popular {
+        margin: 0;
+        border-radius: 0;
+        padding: 25px 2.5vh;
+        height: 580px;
+    }
+
+    #HousingZone .popular .cardsZone {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 10px 0 0;
+        height: 87%;
+    }
+
+    #HousingZone .popular .cardsZone article {
+        width: 100%;
+        height: 144px;
+        margin: 0;
+    }
+
+    #HousingZone .popular .cardsZone article .popularCards .description {
+        margin: 10px 10px 0;
+    }
+
+    #HousingZone .housing {
+        background: none;
+        padding: 25px 2.5vh 20px;
+        height: auto;
+    }
+
+    #HousingZone .housing .cardsZone article {
+        width: 100%;
+    }
+
+    #HousingZone .housing .cardsZone article .housingCards .description {
+        margin: 0 5px;
+    }
+
+    #HousingZone .housing .seeMore {
+        display: none;
+    }
+
+
+    #ActivityZone {
+        padding: 0 2.5vh;
+    }
+
+    #ActivityZone h2 {
+        margin: 0;
+        width: 110px;
+    }
+
+    #ActivityZone .activity {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    #ActivityZone .activity article {
+        width: 100%;
+        height: 190px;
+        margin-bottom: 30px;
+    }
+
+    #ActivityZone .activity article .activityCards .look {
+        height: 134px;
+    }
+
+    footer {
+        background: #F2F2F2;
+        margin: 45px 0 0;
+    }
+
+    footer .footNav {
+        flex-direction: column;
+        padding: 1.5vh 3vh 5vh;
+    }
+
+    footer .footNav div {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
